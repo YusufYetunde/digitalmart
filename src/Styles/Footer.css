@@ -1,0 +1,25 @@
+
+.bgfooter{
+    background-color: #ffffff;
+}
+.about p{
+    color: #78847D;
+    align-items: start;
+    text-align: start;
+}
+.footer_services{
+    text-align: left;
+}
+.widget-title{
+    text-align: left;
+}
+.content{
+    text-align: left;
+}
+.newsletter{
+    text-align: left;
+}
+.development{
+    font-weight: 100;
+    font-size: 15px;
+}
