@@ -7,6 +7,8 @@ import HeadTitle from '../Components/Common/HeadTitle';
 import Drawer from '../Components/Mobile/Drawer';
 import useToggle from '../Components/Hooks/useToggle';
 import Testimonial from '../Components/About/Testimonial'
+import Mission from '../Components/About/Mission'
+import Projects from '../Components/About/Project'
 
 function About() {
   useEffect(() => {
@@ -20,6 +22,8 @@ function About() {
                 title="About Us"
             />
       <Story/>
+      <Mission/>
+      <Projects/>
       <Brands/>
       <Team/>
       <Testimonial/>
