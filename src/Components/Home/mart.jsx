@@ -18,7 +18,7 @@ const Mart = () => {
                     Using our network of industry influencers, we help promote your content
                     </Card.Text>
                     <div class="button">
-                        <Link to="/about" className=' btn-md btn-theme animation border-none rounded-pill btn-color'>Get Started</Link>
+                        <Link to="/about" className=' btn btn-md btn-theme animation border-none rounded-pill btn-color'>Get Started</Link>
                     </div>
                 </Card.Body>
                 </div>

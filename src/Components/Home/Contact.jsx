@@ -10,9 +10,9 @@ function Contact() {
             <div className="row">
                 <div className="col-tact-stye-one col-lg-5 pr-60 pr-md-15 pr-xs-15">
                     <div className="contact-style-one-info">
-                        <h2>Contact Information</h2>
+                        <h2>Contact Us</h2>
                         <p>
-                            Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing.
+                            Collaborate with us on your product and grow your business
                         </p>
                         <ul className='liist'>
                             <li className="wow fadeInUp">
@@ -20,8 +20,8 @@ function Contact() {
                                     <i className="fas fa-phone-alt"><FontAwesomeIcon icon={faPhone}/></i>
                                 </div>
                                 <div className="content">
-                                    <h4 className="titles">Hotline</h4>
-                                    <a href="">+252615031623</a>
+                                    <h4 className="titles">Phone Number</h4>
+                                    <a href="">+234 9162696071</a>
                                 </div>
                             </li>
                             <li className="wow fadeInUp" data-wow-delay="300ms">
@@ -29,9 +29,9 @@ function Contact() {
                                     <i className="fas fa-map-marker-alt"><FontAwesomeIcon icon={faLocation}/></i>
                                 </div>
                                 <div className="info">
-                                    <h4 className="titles">Our Location</h4>
+                                    <h4 className="titles">Location</h4>
                                     <p>
-                                        Shaneemo Mogadishu, Wadajir <br/> Mogadishu
+                                        Surulere, Lagos <br/> Nigeria
                                     </p>
                                 </div>
                             </li>
@@ -40,8 +40,8 @@ function Contact() {
                                     <i className="fas fa-envelope-open-text"><FontAwesomeIcon icon={faMailBulk}/></i>
                                 </div>
                                 <div className="info">
-                                    <h4 className="titles">Official Email</h4>
-                                    <a href="mailto:info@digital.com.com">info@uukow.com</a>
+                                    <h4 className="titles">Email</h4>
+                                    <a href="mailto:info@digital.com.com">info@site.com</a>
                                 </div>
                             </li>
                         </ul>

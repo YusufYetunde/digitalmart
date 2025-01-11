@@ -1,5 +1,4 @@
 import React from "react";
-import ba from "../../Images/shape/ba.png";
 import { Link } from "react-router-dom";
 import shap1 from "../../Images/service/shap1.png";
 import shap2 from "../../Images/service/shap2.png";

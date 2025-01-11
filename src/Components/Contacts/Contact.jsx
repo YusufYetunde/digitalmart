@@ -1,71 +1,108 @@
-import React from "react";
-import Title from "../Common/Title";
-import "../../Styles/Contact.css";
-import {
-  faEnvelope,
-  faLocation,
-  faPhone,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from 'react'
+import illustration from '../../Images/illustration/20.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone, faLocation, faMailBulk, faL } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom';
+
 function Contact() {
   return (
-    <section className={`appie-service-area pt-90 pb-100`} id="service">
-      <div className="container">
-        <div className="row justify-content-center">
-          <div className="col-lg-6"></div>
+    <div className="contact-area bg-gray default-padding">
+        <div className="container">
+            <div className="row">
+                <div className="col-tact-stye-one col-lg-5 pr-60 pr-md-15 pr-xs-15">
+                    <div className="contact-style-one-info">
+                        <h2>Contact Us</h2>
+                        <p>
+                            Collaborate with us on your product and grow your business
+                        </p>
+                        <ul className='liist'>
+                            <li className="wow fadeInUp">
+                                <div className="icon">
+                                    <i className="fas fa-phone-alt"><FontAwesomeIcon icon={faPhone}/></i>
+                                </div>
+                                <div className="content">
+                                    <h4 className="titles">Phone Number</h4>
+                                    <a href="">+234 9162696071</a>
+                                </div>
+                            </li>
+                            <li className="wow fadeInUp" data-wow-delay="300ms">
+                                <div className="icon">
+                                    <i className="fas fa-map-marker-alt"><FontAwesomeIcon icon={faLocation}/></i>
+                                </div>
+                                <div className="info">
+                                    <h4 className="titles">Location</h4>
+                                    <a href=''>
+                                        Surulere, Lagos <br/> Nigeria
+                                    </a>
+                                </div>
+                            </li>
+                            <li className="wow fadeInUp" data-wow-delay="500ms">
+                                <div className="icon">
+                                    <i className="fas fa-envelope-open-text"><FontAwesomeIcon icon={faMailBulk}/></i>
+                                </div>
+                                <div className="info">
+                                    <h4 className="titles">Email</h4>
+                                    <a href="mailto:info@digital.com.com">info@site.com</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="col-tact-stye-one col-lg-7">
+                    <div className="contact-form-style-one">
+                        <div className="illustration wow fadeInRight" data-wow-delay="300ms">
+                            <img src={illustration} />
+                        </div>
+                        <h4 className="sub-heading">Have Questions?</h4>
+                        <h2 className="heading">Send us a Massage</h2>
+                        <form action="assets/mail/contact.php" method="POST" className="contact-form contact-form">
+                            <div className="row">
+                                <div className="col-lg-12">
+                                    <div className="form-group">
+                                        <input className="form-control" id="name" name="name" placeholder="Name" type="text" />
+                                        <span className="alert-error"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="col-lg-6">
+                                    <div className="form-group">
+                                        <input className="form-control" id="email" name="email" placeholder="Email*" type="email" />
+                                        <span className="alert-error"></span>
+                                    </div>
+                                </div>
+                                <div className="col-lg-6">
+                                    <div className="form-group">
+                                        <input className="form-control" id="phone" name="phone" placeholder="Phone" type="text" />
+                                        <span className="alert-error"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="col-lg-12">
+                                    <div className="form-group comments">
+                                        <textarea className="form-control" id="comments" name="comments" placeholder="Tell Us About Project *"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="col-lg-12">
+                                    <div class= "button" type="submit" name="submit" id="submit">
+                                    <Link to="#" className='btn btn-md btn-theme animation border-none rounded-pill btn-color'>Get in touch</Link>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* <!-- Alert Message --> */}
+                            <div className="col-lg-12 alert-notification">
+                                <div id="message" className="alert-msg"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div className="row">
-          <div className="col-lg-4 col-md-6">
-            <div
-              className="appie-single-service text-center mt-30 wow animated fadeInUp"
-              data-wow-duration="2000ms"
-              data-wow-delay="200ms"
-            >
-              <div className="icon">
-                <i className="flaticon">
-                  <FontAwesomeIcon icon={faPhone} />
-                </i>
-              </div>
-              <h4 className="appie-title">Contact Phone Number</h4>
-              <p className="descr">+252 615 031623</p>
-              <p className="descr">+252 615 444164</p>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-6">
-            <div
-              className="appie-single-service text-center mt-30 item-2 wow animated fadeInUp"
-              data-wow-duration="2000ms"
-              data-wow-delay="400ms"
-            >
-              <div className="icon">
-                <i className="flaticon">
-                  <FontAwesomeIcon icon={faEnvelope} />
-                </i>
-              </div>
-              <h4 className="appie-title">Our Email Address</h4>
-              <p className="descr">info@uukow.com</p>
-              <p className="descr">support@uukow.com</p>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-6">
-            <div
-              className="appie-single-service text-center mt-30 item-3 wow animated fadeInUp"
-              data-wow-duration="2000ms"
-              data-wow-delay="600ms"
-            >
-              <div className="icon">
-                <i className="flaticon">
-                  <FontAwesomeIcon icon={faLocation} />
-                </i>
-              </div>
-              <h4 className="appie-title">Our Location</h4>
-              <p className="descr">Shaneemo Mogadishu, Wadajir Mogadishu</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+    </div>
+  )
 }
 
-export default Contact;
+export default Contact

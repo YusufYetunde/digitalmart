@@ -1,5 +1,5 @@
 *{
-  font-family: poppins !important;
+  font-family: Rubik !important;
 }
 .banner-style-one-area{
   margin-top: -30px;
@@ -13,14 +13,14 @@
   justify-content: center;
   text-align: center;
   align-items: center;
-  padding: 20px; /* Added padding to ensure content doesn't touch edges */
+  padding: 20px; 
 }
 
 .head_title {
   color: white;
   font-weight: 700;
   font-size: 70px;
-  margin: 0; /* Remove default margin */
+  margin: 0; 
 }
 
 /* Responsive Styles */
@@ -38,8 +38,8 @@
 
 @media (max-width: 768px) {
   .appie-page-title-area {
-    margin-top: -20px; /* Adjust margin for smaller screens */
-    padding: 15px; /* Adjust padding for smaller screens */
+    margin-top: -20px; 
+    padding: 15px; 
   }
   .head_title {
     font-size: 40px;
@@ -48,8 +48,8 @@
 
 @media (max-width: 576px) {
   .appie-page-title-area {
-    margin-top: -10px; /* Further adjust margin for very small screens */
-    padding: 10px; /* Adjust padding for very small screens */
+    margin-top: -10px; 
+    padding: 10px; 
   }
   .head_title {
     font-size: 30px;
@@ -88,7 +88,7 @@
     margin: 0 auto;
   }
   .icon .flaticon {
-    font-size: 5px; /* Adjust the size as needed */
+    font-size: 5px; 
     color: rgb(0, 0, 119);    /* Adjust the color as needed */
     align-items: center;
   }
@@ -175,14 +175,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 10px; /* Adjust the value as needed */
+  margin-right: 10px; 
 }
 
 .author {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 10px; /* Adjust the value as needed */
+  margin-left: 10px; 
 }
 .cinwaaan a{
   font-size: 16px;
@@ -201,7 +201,7 @@
   padding: 10px;
   margin: 10px;
   border-radius: 8px;
-  width: 400px; /* Adjust the size as needed */
+  width: 400px; 
   background-color: #fff;
 }
 
