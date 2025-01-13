@@ -1,5 +1,5 @@
 import React from 'react'
-import illustration from '../../Images/illustration/20.png'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faLocation, faMailBulk, faL } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
@@ -51,7 +51,7 @@ function Contact() {
                 <div className="col-tact-stye-one col-lg-7">
                     <div className="contact-form-style-one">
                         <div className="illustration wow fadeInRight" data-wow-delay="300ms">
-                            <img src={illustration} />
+                           
                         </div>
                         <h4 className="sub-heading">Have Questions?</h4>
                         <h2 className="heading">Send us a Massage</h2>

@@ -3016,7 +3016,6 @@ nav.woocommerce-breadcrumb a {
   content: "";
   height: 100%;
   width: 100%;
-  background: url(../Images/shape/14.png);
   z-index: -1;
   background-repeat: no-repeat;
   background-position: center;
@@ -3258,7 +3257,7 @@ nav.woocommerce-breadcrumb a {
   content: "";
   height: 100%;
   width: 100%;
-  background: url(../Images/shape/19.png);
+  
   z-index: -1;
   background-repeat: no-repeat;
   background-position: center;
@@ -3808,7 +3807,6 @@ nav.woocommerce-breadcrumb a {
   content: "";
   height: 120%;
   width: 120%;
-  background: url(../Images/shape/46.png);
   background-repeat: no-repeat;
   z-index: -1;
   background-size: contain;
@@ -6930,7 +6928,7 @@ i::before {
   content: "";
   height: 100px;
   width: 100px;
-  background: url(../Images/shape/29.png);
+
   background-size: contain;
   background-repeat: no-repeat;
   z-index: -1;
@@ -9179,7 +9177,7 @@ ul.financial-step li h4 {
   content: "";
   height: 110%;
   width: 110%;
-  background: url(../Images/shape/19.png);
+
   z-index: -1;
   background-repeat: no-repeat;
   background-position: center;

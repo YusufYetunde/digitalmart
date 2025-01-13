@@ -7,7 +7,7 @@
 .appie-page-title-area {
   background-image: url('../assets/images/hero.png');
   background-size: cover;
-  background-color: rgb(0, 0, 119);
+  background-color: #98AA28;
   margin-top: -30px;
   display: flex;
   justify-content: center;
@@ -56,10 +56,10 @@
   }
 }
 .title{
-    font-family: poppins;
+    font-family: Rubik;
     font-weight: 900;
     font-size: 56px !important;
-    color: rgb(0, 0, 119);
+    color: #98AA28;
     text-align: center;
 }
 .hero_sub{
@@ -83,13 +83,13 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100px; /* Adjust as needed */
-    width: 100px;  /* Adjust as needed */
+    height: 100px; 
+    width: 100px;  
     margin: 0 auto;
   }
   .icon .flaticon {
     font-size: 5px; 
-    color: rgb(0, 0, 119);    /* Adjust the color as needed */
+    color: #98AA28;    
     align-items: center;
   }
   .icon .fa{
@@ -97,21 +97,21 @@
   }
   .arrowUp{
     font-size: 15px !important;
-    color: rgb(0, 0, 119);
+    color: #98AA28;
   }
   .sub-heading{
-    color: rgb(0, 0, 119);
+    color: #98AA28;
   }
   .fullBrand{
     height: 500px !important;
     padding-top: 100px;
   }
   .process-area{
-    background-image: url(../Images/shape/2.jpg);
+   
   }
  
   .bg{
-    /* background-color: rgb(0, 0, 119)!important; */
+    /* background-color: #98AA28!important; */
     
   }
   .bg-img {
@@ -126,10 +126,10 @@
     flex-direction: column;
   }
   .titles{
-    font-family: poppins;
+    font-family: Rubik;
     font-weight: 900;
     font-size: 26px !important;
-    color: rgb(0, 0, 119);
+    color: #98AA28;
     align-items: start;
 }
 .info{
@@ -144,12 +144,10 @@
   flex-direction: column;
   align-items: center;
 }
-.services-style-four-area{
-  background-image: url(../assets/img/shape/43.png);
-}
 .info .missTitle{
-  font-family: poppins;
+  font-family: Rubik;
   font-weight: 900;
+  margin-right: 40px;
 }
 .info .missDec{
   align-items: start;
@@ -165,7 +163,7 @@
   
 }
 .jiif li{
-  color: rgb(0, 0, 119);
+  color: #98AA28;
 }
 .small-text{
   font-size: small;
@@ -186,7 +184,7 @@
 }
 .cinwaaan a{
   font-size: 16px;
-  color: rgb(0, 0, 119);
+  color: #98AA28;
 }
 .button-regular span{
   margin-left: 8px;
@@ -211,27 +209,27 @@
 }
 
 .title-mission{
-  color: rgb(0, 0, 119);
-  font-family: poppins;
+  color: #98AA28;
+  font-family: Rubik;
   font-weight: 700;
 }
 .customer_heading{
-  color: rgb(0, 0, 119);
+  color: #98AA28;
   align-items: left;
   text-align: left;
-  font-family: poppins;
+  font-family: Rubik;
   font-size: 36px;
   font-weight: 700;
   text-transform: capitalize;
 }
 .work_title{
-  font-family: poppins;
+  font-family: Rubik;
   font-weight: 700;
   font-size: 46px;
 }
 .about_home_heading{
   font-weight: 700;
-  color: rgb(0, 0, 119);
+  color: #98AA28;
   text-transform: uppercase;
   
 }

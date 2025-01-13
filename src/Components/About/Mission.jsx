@@ -5,7 +5,7 @@ function Mission() {
     const [missions, setMissions] = useState([]);
 
     useEffect(() => {
-        fetch('/Models/vision.json') // Ensure the correct path here
+        fetch('/Models/vision.json') 
             .then(response => {
                 console.log('Response status:', response.status);
                 return response.json();
@@ -37,10 +37,7 @@ function Mission() {
                         missions.map(mission => (
                             <div className="col-lg-6 col-md-6 services-style-four" key={mission.id}>
                                 <div className="item">
-                                    <div className="thumb">
-                                        <img src={mission.image} alt={mission.title} />
-                                    </div>
-                                    <div className="info">
+                                    <div className="info ">
                                         <h4 className='missTitle'><a href="#">{mission.title}</a></h4>
                                         <p className='missDec'>{mission.description}</p>
                                     </div>

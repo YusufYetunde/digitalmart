@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../../Styles/About.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import animate1 from "../../Images/shape/anim-1.png";
-import animate2 from "../../Images/shape/anim-2.png";
 import image100 from "../../Images/user.png";
 import qoute from "../../Images/quote.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -31,7 +29,7 @@ function Testimonial() {
   return (
     <div className="testimonials-area overflow-hidden bg-gray default-padding">
       <div className="shape-animation">
-        <img src={animate1} alt="Animation 1" />
+        
       </div>
       <div className="container">
         <div className="row align-center">
@@ -61,7 +59,7 @@ function Testimonial() {
           <div className="col-2"></div>
           <div className="testimonial-style-one pl-65 pl-md-15 pl-xs-15 col-xl-6 col-lg-7">
             <div className="shape-right-bottom">
-              <img src={animate2} alt="Animation 2" />
+             
             </div>
             <div className="testimonial-style-one-carousel">
               <Swiper
