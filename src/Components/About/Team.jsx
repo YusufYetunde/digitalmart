@@ -1,17 +1,48 @@
 import React from "react";
-import teamPicture from "../../Images/800x800.png";
+import "../../Styles/Team.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
   faTwitter,
   faXTwitter,
+  faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
-import { faX } from "@fortawesome/free-solid-svg-icons";
+import team01 from '../../Images/team-01.png'
+import team02 from '../../Images/team-02.jpg'
+import team03 from '../../Images/team-03.png'
+import team04 from '../../Images/team-04.png'
+
+
+const teamMembers = [
+    {
+        imgUrl: team01,
+        name: 'Yetunde',
+        position: 'Production Designer'
+    },
+
+    {
+        imgUrl: team02,
+        name: 'Yetunde',
+        position: 'Product Designer'
+    },
+
+    {
+        imgUrl: team03,
+        name: 'Yetunde',
+        position: 'Customer Service'
+    },
+
+    {
+        imgUrl: team04,
+        name: 'Yetunde',
+        position: 'Project Leader'
+    },
+]
 
 function Team() {
   return (
-    <div className="team-style-one-area text-center bg-gray default-padding bottom-less">
-      <div className="container">
+    <section className='team-style-one-area our__team default-padding'>
+    <div className="container">
         <div className="row">
           <div className="col-lg-8 offset-lg-2">
             <div className="site-heading text-center">
@@ -22,102 +53,36 @@ function Team() {
           </div>
         </div>
       </div>
+    <div className='container'>
+        <div className='team__wrapper'>
+            {
+                teamMembers.map((item, index) => (
+                    <div className='team__item col-lg-3' key={index}>
+                        <div className='team__img'>
+                            <img src={item.imgUrl} alt='' />
+                        </div>
+                        <div className='team__details'>
+                            <h4>{item.name}</h4>
+                            <p className='description'>{item.position}</p>
 
-      <div className="container">
-        <div className="row align-center">
-          <div className="col-lg-12">
-            <div className="row">
-              {/* <!-- Single Item --> */}
-              <div className="team-style-one col-xl-4 col-lg-6 col-md-6">
-                <div className="team-style-one-item">
-                  <div className="thumb">
-                    <img src={teamPicture} />
-                    <ul className="social">
-                      <li className="facebook">
-                        <a href="#">
+                            <div className='team__member-social'>
+                                <span><a href="#">
                           <FontAwesomeIcon icon={faFacebook} />
-                        </a>
-                      </li>
-                      <li className="twitter">
-                        <a href="#">
+                        </a></span>
+                                <span><a href="#">
                           <FontAwesomeIcon icon={faXTwitter} />
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="info">
-                    <h4>
-                      <a href="team-details.html">Fardowsa Sheik Abdirahman</a>
-                    </h4>
-                    <span>CEO and Founder</span>
-                  </div>
-                </div>
-              </div>
-              {/* <!-- End Single Item -->
-                        <!-- Single Item --> */}
-
-              {/* <!-- Single Item --> */}
-              <div className="team-style-one col-xl-4 col-lg-6 col-md-6">
-                <div className="team-style-one-item">
-                  <div className="thumb">
-                    <img src={teamPicture} />
-                    <ul className="social">
-                      <li className="facebook">
-                        <a href="#">
-                          <FontAwesomeIcon icon={faFacebook} />
-                        </a>
-                      </li>
-                      <li className="twitter">
-                        <a href="#">
-                          <FontAwesomeIcon icon={faXTwitter} />
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="info">
-                    <h4>
-                      <a href="team-details.html">Abdulkadir Uukow</a>
-                    </h4>
-                    <span>Chief Operating Officer</span>
-                  </div>
-                </div>
-              </div>
-              {/* <!-- End Single Item -->
-                        <!-- Single Item --> */}
-
-              {/* <!-- Single Item --> */}
-              <div className="team-style-one col-xl-4 col-lg-6 col-md-6">
-                <div className="team-style-one-item">
-                  <div className="thumb">
-                    <img src={teamPicture} />
-                    <ul className="social">
-                      <li className="facebook">
-                        <a href="#">
-                          <FontAwesomeIcon icon={faFacebook} />
-                        </a>
-                      </li>
-                      <li className="twitter">
-                        <a href="#">
-                          <FontAwesomeIcon icon={faXTwitter} />
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="info">
-                    <h4>
-                      <a href="team-details.html">Sharmarke Mascuud</a>
-                    </h4>
-                    <span>Creative Director</span>
-                  </div>
-                </div>
-              </div>
-              {/* <!-- End Single Item -->
-                        <!-- Single Item --> */}
-            </div>
-          </div>
+                        </a></span>
+                                <span><a href="#">
+                          <FontAwesomeIcon icon={faLinkedinIn} />
+                        </a></span>
+                            </div>
+                        </div>
+                    </div>
+                ))
+            }
         </div>
-      </div>
     </div>
+</section>
   );
 }
 
